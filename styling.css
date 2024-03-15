@@ -1,3 +1,24 @@
-.hero.is-primary {
-    background-color: #66aaff 
+@font-face {
+    font-family: 'DosisBold'; /* Give a name to your font */
+    src: url('Dosis-Bold.ttf'); /* Path to your font file */
+}
+
+@font-face {
+    font-family: 'DosisMedium'; /* Give a name to your font */
+    src: url('Dosis-Medium.ttf'); /* Path to your font file */
+}
+
+body, .container, .hero-body, .footer, p{ 
+    background-color: #feffff;
+    color: #0D0D0D;
+    /* color: #0D0Dff; */
+}
+
+.title {
+    font-family: 'DosisBold', sans-serif;
+    font-size: calc(16px + 9vw); /* Starts at 16px and grows with the viewport, adjust as needed */
+}
+
+.subtitle{
+    font-family: 'DosisMedium', sans-serif; /* Fallback to sans-serif if the custom font can't be loaded */
 }
