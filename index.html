@@ -7,6 +7,10 @@
     <title>Floof Audio</title>
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <!-- Your preferred icon library here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <!-- Bulma SOCIAL ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css" />
     <link rel="stylesheet" href="styling.css">
 
 </head>
@@ -23,20 +27,26 @@
             <!-- </div> -->
         </section>
 
+
+
+
         <!-- About Section -->
-        <section id="about" class="section">
+        <section id="about" class="section" style="padding-top: 0;">
             <div class="container">
                 <!-- <h1 class="title">About Floof Audio</h1> -->
                 <p>
-                    Floof Audio offers a unique collection of VST/AAX/AU plugins. Each creation is meticulously crafted
+                    Floof Audio is a audio plugin company started by the elusive Sogsquid after considering the need for
+                    more creative tools in the audio production realm.
+                    We offer a unique collection of VST/AAX/AU plugins where each creation is meticulously crafted
                     to
-                    inspire musicians, producers, and sound engineers around the globe to explore new auditory
-                    landscapes. Floof was born from a passion project in the vibrant city of Oslo, Norway, and is set on
-                    a journey to
-                    transform the way artists create.
+                    inspire musicians, producers, and sound engineers around the globe. 
+                    Floof was born in the vibrant city of Oslo, Norway, and is set on
+                    a journey to transform the way artists create.
                 </p>
             </div>
         </section>
+
+
 
 
         <!-- Plugins Section -->
@@ -47,14 +57,24 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="content has-text-centered">
+
+
+                <!-- HOT LINKS SECTION-->
+                <section id="hotlinks" class="section has-text-centered" style="padding: 0;">
+                    <button id="${buttonIDDiscord}" class="button is-link is-discord mt-4">DISCORD</button>
+                    <button id="${buttonIDDiscord}" class="button is-link is-youtube mt-4">YOUTUBE</button>
+                    <button id="${buttonIDDiscord}" class="button is-link is-instagram mt-4">INSTAGRAM</button>
+                    <button id="${buttonIDDiscord}" class="button is-link mt-4">TIKTOK</button>
+                </section>
                 <p>
-                    <strong>Contact</strong>
+                    <strong>Connect with us, join the creative process and meet likeminded people :)</strong>
                 </p>
             </div>
         </footer>
 
         <script>
-            function addPluginSection(pluginName, pluginDescription, containerId, imagehref, btnIDManual,btnIDTutorials) {
+
+            function addPluginSection(pluginName, pluginDescription, containerId, imagehref, btnIDManual, btnIDTutorials) {
                 const container = document.getElementById(containerId);
 
                 const pluginHTML = `
@@ -77,7 +97,7 @@
                 container.innerHTML += pluginHTML;
             }
 
-            addPluginSection("Paw Control", "MIDI note filter with lots of features for enhancing your musical range.", "plugins", "paw1000x522.png", "pawManualID","pawTutorialsID");
+            addPluginSection("Paw Control", "MIDI note filter with lots of features for enhancing your musical range.", "plugins", "paw1000x522.png", "pawManualID", "pawTutorialsID");
             addPluginSection("Bark Board", "MIDI channel filter, enabling you to play all your favourite instruments from one keyboard.", "plugins");
             addPluginSection("Purr Sine", "Purr Sine is a simple sine synth that sounds amazing!", "plugins");
 
@@ -90,7 +110,7 @@
             document.getElementById('pawTutorialsID').addEventListener('click', function () {
                 window.open('https://www.youtube.com/', '_blank');
             });
-            
+
         </script>
     </div>
 </body>
