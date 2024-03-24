@@ -52,20 +52,23 @@
                 </p>
             </div>
         </footer>
+
         <script>
-            function addPluginSection(pluginName, pluginDescription, containerId) {
+            function addPluginSection(pluginName, pluginDescription, containerId, imagehref, btnIDManual,btnIDTutorials) {
                 const container = document.getElementById(containerId);
 
                 const pluginHTML = `
                 <div class="column is-half"> <!-- Each plugin takes up half the width on desktop, stacks on mobile -->
                     <div class="box">
-                        <figure class="image is-128x128">
-                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="${pluginName} placeholder">
+                        <figure class="image is-2by1 mb-3">
+                            <img src="${imagehref}" alt="${pluginName} placeholder">
                         </figure>
                         <div>
-                            <p class="title is-5">${pluginName}</p>
+                            <p class="title is-5 mb-0">${pluginName}</p>
                             <p>${pluginDescription}</p>
-                            <a href="https://floofaudio.gumroad.com/">Download here</a>
+                            <button id="${btnIDManual}" class="button is-light mt-4">Manual</button>
+                            <button id="${btnIDTutorials}" class="button is-light mt-4">Tutorials</button>
+
                         </div>
                     </div>
                 </div>`;
@@ -74,10 +77,20 @@
                 container.innerHTML += pluginHTML;
             }
 
-            addPluginSection("Paw Control", "Paw Control is in essence a midi note filter with randomization options.", "plugins");
-            addPluginSection("Bark Board", "Bark Board is in essence a MIDI channel filter with randomization options.", "plugins");
+            addPluginSection("Paw Control", "MIDI note filter with lots of features for enhancing your musical range.", "plugins", "paw1000x522.png", "pawManualID","pawTutorialsID");
+            addPluginSection("Bark Board", "MIDI channel filter, enabling you to play all your favourite instruments from one keyboard.", "plugins");
             addPluginSection("Purr Sine", "Purr Sine is a simple sine synth that sounds amazing!", "plugins");
 
+        </script>
+
+        <script>
+            document.getElementById('pawManualID').addEventListener('click', function () {
+                window.location.href = 'pawcontrol.html';
+            });
+            document.getElementById('pawTutorialsID').addEventListener('click', function () {
+                window.open('https://www.youtube.com/', '_blank');
+            });
+            
         </script>
     </div>
 </body>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paw Control Manual</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container is-max-desktop content">
+
+            <div class="block">
+                <p class="title is-1 mb-2">Paw Control Manual</p>
+            </div>
+
+
+            <div class="container mb-5">
+                <img src="manual_image.png" alt="Paw control manual image">
+            </div>
+            <div class="block">
+                <div class="title is-5 mb-1">1. Key Selectors</div>
+                <div>These 12 key selectors represent the 12 notes of an octave, allowing you to select which MIDI
+                    notes
+                    are active. A blue keycap indicates an active note; white indicates inactive. This selection
+                    applies
+                    to all octaves. The plugin highlights outputted keys in brown. Inactive notes will be replaced
+                    by
+                    the nearest active note upon play.</div>
+            </div>
+
+            <div class="block">
+                <div class="title is-5 mb-1">2. Key Selection Nudgers</div>
+                <div>Two buttons enable nudging all key selections one step to the left or right, facilitating quick
+                    scale modulation. For instance, selecting a minor scale in C and clicking the right nudger
+                    changes
+                    the scale to C# minor, and so forth.</div>
+            </div>
+
+            <div class="block">
+                <div class="title is-5 mb-1">3. Saveslots</div>
+                <div>Four buttons allow for quick switching between different key selections. The active saveslot is
+                    highlighted. Selections auto-save to the current slot, with the ability to copy selections
+                    across
+                    slots using Ctrl/Command+click.</div>
+            </div>
+
+            <div class="block">
+                <div class="title is-5 mb-1">4. Random Range</div>
+                <div>This slider adds randomness to MIDI output relative to the input note, with a range both above
+                    and
+                    below the input but confined to the current key selection.</div>
+            </div>
+
+            <div class="block">
+                <div class="title is-5 mb-1">5. Octave Down Range</div>
+                <div>Adjusts the likelihood of producing notes one or more octaves below the input note.</div>
+            </div>
+
+            <div class="block">
+                <div class="title is-5 mb-1">6. Octave Up Range</div>
+                <div>Similar to the Octave Down Range but affects octaves above the input note.</div>
+            </div>
+
+            <div class="block">
+                <div class="title is-5 mb-1">7. REC</div>
+                <div>Deactivates key selectors for setting selection via MIDI input. Click REC again to save.
+                    Holding
+                    Ctrl/Command and clicking enters MIDI learn mode for saveslots.</div>
+            </div>
+
+            <div class="block">
+                <div class="title is-5 mb-1">8. Internal Sine Synth On/Off</div>
+                <div>Toggles the internal sine synth, impacting plugin performance.</div>
+            </div>
+
+
+
+
+    </section>
+
+    <!-- ===========================================================0 -->
+    <!-- INSTALLATION -->
+    <section class="section">
+        <div class="container is-max-desktop content">
+            <div class="container" id="installation">
+                <div class="block">
+                    <div class="title is-4 mt-5">INSTALLATION GUIDE</div>
+
+                    <div class="block">
+                        <div class="title is-5 mb-1">General installation notes</div>
+                        <div>Installation of this plugin is as simply as placing the plugin file in a directory
+                            where your DAW host is able to locate it. The download includes both an installer
+                            that will
+                            do this for you, and
+                            the plugin file itself if you do not wish to use the installer. The installer might
+                            not be
+                            trusted by your operating system due to it
+                            not being digitally signed which is costly and something i might add in the future.
+                            I
+                            can assure you that it is perfectly safe as long as you downloaded the plugin from
+                            my
+                            site at gumroad. However you can choose to simply move the plugin file to your
+                            desired
+                            directory if you decide that you do not want to trust it</div>
+
+                        <div class="title is-5 mb-1 mt-3">Windows</div>
+                        <div>
+                            VST Plugins for windows are generally located in C/user/vst3. However it is
+                            dependable on
+                            the DAW host.
+                        </div>
+                        <div class="title is-5 mb-1 mt-3">Mac</div>
+                        <div>
+                            
+                        </div>
+                        <div class="title is-5 mb-1 mt-3">Linux</div>
+                        <div>
+                            If you're a linux user you can probably figure this out.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================================================0 -->
+    <!-- DAW ROUTING -->
+    <section class="section">
+        <div class="container is-max-desktop content">
+            <div class="container" id="daw-setup">
+                <div class="block">
+                    <div class="title is-4 mt-40">DAW SETUP GUIDE</div>
+
+                    <div class="block">
+                        <div class="title is-5 mb-1">STUDIO ONE</div>
+                        <div>
+                            Image of routing and some explanation.
+                        </div>
+                        <div class="title is-5 mb-1">ABLETON LIVE</div>
+                        <div class="title is-5 mb-1">FL STUDIO</div>
+                        <div class="title is-5 mb-1">BITWIG</div>
+                        <div class="title is-5 mb-1">REASON</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Bulma and your custom scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/js/bulma.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.toc-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default anchor link behavior
+                    const href = this.getAttribute('href'); // Get the href attribute
+                    const offsetTop = document.querySelector(href).offsetTop; // Get the top offset of the target
+
+                    // Scroll to the target element smoothly
+                    window.scroll({
+                        top: offsetTop, // Scroll to the offset top of the target element
+                        behavior: 'smooth' // Smooth scroll
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
