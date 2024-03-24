@@ -22,3 +22,18 @@ body, .container, .hero-body, .footer, p{
 .subtitle{
     font-family: 'DosisMedium', sans-serif; /* Fallback to sans-serif if the custom font can't be loaded */
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Override Bulma's dark mode variables with light mode values */
+        --bulma-background: #ffffff;
+        --bulma-text: #363636;
+        /* Add more variables as needed */
+    }
+
+    /* Your additional overrides for specific elements if Bulma's variables are not enough */
+    body {
+        background-color: var(--bulma-background);
+        color: var(--bulma-text);
+    }
+}
