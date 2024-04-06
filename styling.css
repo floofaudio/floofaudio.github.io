@@ -37,3 +37,20 @@ body, .container, .hero-body, .footer, p{
         color: var(--bulma-text);
     }
 }
+
+.button.is-warning,
+.button.is-warning:hover,
+.button.is-warning:focus,
+.button.is-warning:active {
+    background-color: #000000; /* Black background */
+    border-color: #000000; /* Black border */
+    color: #ffffff; /* White text */
+}
+
+.button.is-warning:hover,
+.button.is-warning:focus,
+.button.is-warning:active {
+    background-color: #3fc8f2; /* Light blue background on hover, focus, and active */
+    border-color: #3fc8f2; /* Light blue border on hover, focus, and active */
+    color: #ffffff; /* Ensure text stays white */
+}

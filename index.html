@@ -35,27 +35,26 @@
             <div class="container">
 
                 <section id="links" class="section" style="padding-top: 0;">
-                    <!-- <div class="container"> -->
-                    <div class="columns">
-                        <div class="column is-one-quarter is-offset-one-fifth">
-                            <button class="button is-warning"> GET OUR PLUGINS</button>
+                    <div class="container">
+                      <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                          <!-- Group buttons in a div with flexbox -->
+                          <div style="display: flex; justify-content: center; gap: 20px;">
+                            <button id="getAllPlugins" class="button is-warning">GET ALL OUR PLUGINS HERE</button>
+                            <button id="connectWithUs" class="button is-warning">CONNECT WITH US</button>
+                          </div>
                         </div>
-                        <div class="column is-one-quarter">
-                            <button class="button is-warning"> CONNECT WITH US</button>
-                        </div>
+                      </div>
                     </div>
-                    <!-- </div> -->
-                </section>
+                  </section>
 
                 <!-- <h1 class="title">About Floof Audio</h1> -->
                 <p>
-                    Floof Audio is a audio plugin company started by the elusive Sogsquid after considering the need for
+                    Floof Audio is a audio plugin company started by Sogsquid after considering the need for
                     more creative tools in the audio production realm.
                     We offer a unique collection of VST/AAX/AU plugins where each creation is meticulously crafted
-                    to
-                    inspire musicians, producers, and sound engineers around the globe.
-                    Floof was born in the vibrant city of Oslo, Norway, and is set on
-                    a journey to transform the way artists create.
+                    to inspire musicians, producers, and sound engineers around the globe.
+     
                 </p>
             </div>
         </section>
@@ -74,19 +73,20 @@
 
         <script>
 
-            function addPluginSection(pluginName, pluginDescription, containerId, imagehref, btnIdGet, btnIDManual, btnIDTutorials,btnGetText) {
+            function addPluginSection(pluginName, pluginDescription, containerId, imagehref, btnIDManual, btnIDTutorials, imgLinkURL) {
                 const container = document.getElementById(containerId);
 
                 const pluginHTML = `
                 <div class="column is-half"> <!-- Each plugin takes up half the width on desktop, stacks on mobile -->
                     <div class="box">
                         <figure class="image is-2by1 mb-3">
-                            <img src="${imagehref}" alt="${pluginName} placeholder">
+                            <a href="${imgLinkURL}" alt="Link description">
+                                <img src="${imagehref}" alt="${pluginName} placeholder">
+                              </a>
                         </figure>
                         <div>
                             <p class="title is-5 mb-0">${pluginName}</p>
                             <p>${pluginDescription}</p>
-                            <button id="${btnIDGet}" class="button is-light mt-4">${btnGetText}</button>
                             <button id="${btnIDManual}" class="button is-light mt-4">Manual</button>
                             <button id="${btnIDTutorials}" class="button is-light mt-4">Tutorials</button>
 
@@ -98,15 +98,19 @@
                 container.innerHTML += pluginHTML;
             }
 
-            addPluginSection("Paw Control", "MIDI note filter with lots of features for enhancing your musical range.", "plugins", "paw1000x522.png", "pawDownloadID","pawManualID", "pawTutorialsID", "Download");
+            addPluginSection("Paw Control", "MIDI note filter with lots of features for enhancing your musical range.", "plugins", "paw1000x522.png", "pawManualID", "pawTutorialsID", "https://floofaudio.gumroad.com/l/pawcontrol?layout=profile");
             addPluginSection("Bark Board", "MIDI channel filter, enabling you to play all your favourite instruments from one keyboard.", "plugins", "coming_soon.jpg");
-            addPluginSection("Purr Sine", "Purr Sine is a simple sine synth that sounds amazing!", "plugins","coming_soon.jpg");
+            addPluginSection("Purr Sine", "Purr Sine is a simple sine synth that sounds amazing!", "plugins", "coming_soon.jpg");
 
         </script>
 
         <script>
-            document.getElementById('pawDownloadID').addEventListener('click', function () {
-                window.location.href = 'https://floofaudio.gumroad.com/l/pawcontrol?layout=profile';
+            document.getElementById('getAllPlugins').addEventListener('click', function () {
+                window.open('https://floofaudio.gumroad.com', '_blank');
+
+            });
+            document.getElementById('connectWithUs').addEventListener('click', function () {
+                window.open('https://linktr.ee/floofaudio', '_blank');
             });
             document.getElementById('pawManualID').addEventListener('click', function () {
                 window.location.href = 'pawcontrol.html';
