@@ -83,6 +83,7 @@
 
     <!-- ===========================================================0 -->
     <!-- INSTALLATION -->
+    <hr>
     <section class="section">
         <div class="container is-max-desktop content">
             <div class="container" id="installation">
@@ -92,33 +93,22 @@
                     <div class="block">
                         <div class="title is-5 mb-1">General installation notes</div>
                         <div>Installation of this plugin is as simply as placing the plugin file in a directory
-                            where your DAW host is able to locate it. The download includes both an installer
-                            that will
-                            do this for you, and
-                            the plugin file itself if you do not wish to use the installer. The installer might
-                            not be
-                            trusted by your operating system due to it
-                            not being digitally signed which is costly and something i might add in the future.
-                            I
-                            can assure you that it is perfectly safe as long as you downloaded the plugin from
-                            my
-                            site at gumroad. However you can choose to simply move the plugin file to your
-                            desired
-                            directory if you decide that you do not want to trust it</div>
+                            where your DAW host is able to locate it. An installer will replace this in the near future.
+                        </div>
 
                         <div class="title is-5 mb-1 mt-3">Windows</div>
                         <div>
                             VST Plugins for windows are generally located in C/user/vst3. However it is
                             dependable on
-                            the DAW host.
+                            the DAW host configuration.
                         </div>
                         <div class="title is-5 mb-1 mt-3">Mac</div>
                         <div>
-                            
+                            This plugin is currently not supported on Mac and as an AU plugin. We plan to add support in the future once we have sufficient funds to acquire a Mac computer.
                         </div>
                         <div class="title is-5 mb-1 mt-3">Linux</div>
                         <div>
-                            If you're a linux user you can probably figure this out.
+                            If you are a Linux user, we are confident in your ability to figure this out, but the general idea is the same as for windows.
                         </div>
                     </div>
                 </div>
@@ -127,22 +117,62 @@
     </section>
     <!-- ===========================================================0 -->
     <!-- DAW ROUTING -->
+    <hr>
     <section class="section">
         <div class="container is-max-desktop content">
             <div class="container" id="daw-setup">
                 <div class="block">
-                    <div class="title is-4 mt-40">DAW SETUP GUIDE</div>
+                    <div class="title is-4 mt-40">DAW ROUTING GUIDE</div>
 
                     <div class="block">
-                        <div class="title is-5 mb-1">STUDIO ONE</div>
-                        <div>
-                            Image of routing and some explanation.
+                        <div class="container mb-5">
+                            <div class="title is-5 mb-1 ">ABLETON LIVE</div>
+                            <img src='images/ableton_guide.png' alt="Ableton Live setup guide" class="guideImages">
+                            <div>
+                                Place Paw Control on one track and some other instrument on another track.
+                                On the track containing the other instrument, under 'midi from' choose PawControl in the
+                                list. Remember to click on the blue monitor in icon in order to hear that track.
+                            </div>
                         </div>
-                        <div class="title is-5 mb-1">ABLETON LIVE</div>
-                        <div class="title is-5 mb-1">FL STUDIO</div>
-                        <div class="title is-5 mb-1">BITWIG</div>
-                        <div class="title is-5 mb-1">REASON</div>
-
+                        <div class="container mb-5">
+                            <div class="title is-5 mb-1">FL STUDIO</div>
+                            <img src='images/fl_studio_guide.png' alt="FL Studio setup guide" class="guideImages">
+                            <div>
+                                Place Pawcontrol on one track and some other instrument on another track.
+                                In the plugin window of Paw Control choose on of the MIDI output ports.
+                                In the plugin window of the other instrument, choose the same MIDI port as an Input.
+                            </div>
+                        </div>
+                        <div class="container mb-5">
+                            <div class="title is-5 mb-1">CUBASE</div>
+                            <img src='images/cubase_guide.png' alt="Cubase setup guide" class="guideImages">
+                            <div>
+                                Place Pawcontrol on one track and some other instrument on another track.
+                                On the track containing the other instrument, under MIDI routing choose PawControl in
+                                the
+                                list.
+                            </div>
+                        </div>
+                        <div class="container mb-5">
+                            <div class="title is-5 mb-1">STUDIO ONE</div>
+                            <img src="images/studio_one_guide.png" alt="Studio one setup guide" class="guideImages">
+                            <div>
+                                Place Pawcontrol on one track and some other instrument on another track.
+                                On the track containing the other instrument, select inputs and choose PawControl in the
+                                list.
+                                Remember to click on the blue speaker icon next to the record icon in order to hear that
+                                track.
+                            </div>
+                        </div>
+                        <div class="container mb-5">
+                            <div class="title is-5 mb-1">BITWIG</div>
+                            <img src='images/bitwig_guide.png' alt="Studio one setup guide" class="guideImages">
+                            <div>
+                                Place Pawcontrol on one track and some other instrument on another track.
+                                On the track containing the other instrument, add a note receiver tool and select Paw
+                                Control as the note source.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

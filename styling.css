@@ -23,6 +23,12 @@ body, .container, .hero-body, .footer, p{
     font-family: 'DosisMedium', sans-serif; /* Fallback to sans-serif if the custom font can't be loaded */
 }
 
+.guideImages{
+    max-width: 70%;
+    height: auto;
+
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         /* Override Bulma's dark mode variables with light mode values */
