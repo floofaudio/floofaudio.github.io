@@ -11,7 +11,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
     <!-- Bulma SOCIAL ICONS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css" />
+
     <link rel="stylesheet" href="styling.css">
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+
+
+    <script src="modal_script.js"></script>
 
 </head>
 
@@ -27,88 +34,152 @@
             <!-- </div> -->
         </section>
 
-
-
-
         <!-- About Section -->
-        <section id="about" class="section" style="padding-top: 0;">
-            <div class="container">
-
-                <section id="links" class="section" style="padding-top: 0;">
-                    <div class="container">
-                        <div class="columns is-centered">
-                            <div class="column is-one-third">
-                                <button id="getAllPlugins" class="button is-warning">GET OUR PLUGINS HERE</button>
-                            </div>
-                            <div class="column is-one-third">
-                                <button id="connectWithUs" class="button is-warning">CONNECT WITH US</button>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <p>
-                Floof Audio is a audio plugin company started after considering the need for
-                more creative tools in the audio production realm.
-                We offer a unique collection of VST/AAX plugins where each creation is meticulously crafted
-                to inspire musicians, producers, and sound engineers around the globe. 
-                All our plugins are available through Gumroad, linked above and some of them are free :)
-                
-            </p>
-
+        <section id="about" class="section about-section">
+            <div>
+                <p>
+                    Floof Audio is a audio plugin company started after considering the need for
+                    more creative tools in the audio production realm.
+                    We offer a unique collection of VST/AAX plugins where each creation is meticulously crafted
+                    to inspire musicians, producers, and sound engineers around the globe.
+                    All our plugins are available through Gumroad, and some of them are free :)
+                </p>
+                </div>
         </section>
-
-
-
-
 
         <!-- Plugins Section -->
         <section class="section">
-            <div id="plugins" class="columns is-multiline"> </div>
+
+            <!-- PAW CONTROL -->
+            <div id="plugins">
+                <div class="box">
+                    <!-- CAROUSEL -->
+
+                    <div class="container">
+                        <!-- Start Carousel -->
+                        <div id="carousel-demo" class="carousel caro_center">
+                            <div class="carousel-item carousel-youtube">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/06KPL2Eq8n0?si=UElJ8qcqVnjdp2je"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+
+                                <figure class="image is-2by1">
+                                    <img src="images/paw1000x522_free.png" alt="Paw Control Plugin Image">
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+
+                                <figure class="image">
+                                    <img src="images/paw1000x522_free.png" alt="Paw Control Plugin Image">
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- End Carousel -->
+                    </div>
+                    <div class="container mt-5">
+                        <p class="title is-5 mb-0">PAW CONTROL (FREE)</p>
+
+                        <div class="content">
+                            <ul>
+                                <li>Filter MIDI notes</li>
+                                <li>Randomize MIDI notes relative to your input</li>
+                                <li>Route to external instruments or use internal sine synth</li>
+                                <li>Optimized for both live performance and studio</li>
+                                <li>Endless fun for you and your friends, be it with hands or paws!</li>
+                            </ul>
+                        </div>
+
+                        <p>
+
+                            Paw Control is a VST instrument that lets you filter MIDI notes in new and creative ways.
+                            With
+                            features for randomizing notes relative to YOUR input in real-time, it plays along with your
+                            creative vision while slightly nudging you into new realms of musical discovery. The purpose
+                            of
+                            this instrument is to enhance your creativity rather than trying to replace it. Paw Control
+                            also
+                            includes a simple sine synth and is super easy to route forward to any MIDI instrument, be
+                            it
+                            software or hardware.
+                        </p>
+
+                        <div class="container">
+                            <a class="gumroad-button" href="https://floofaudio.gumroad.com/l/pawcontrol">Buy on</a>
+                            <button class="button js-modal-trigger" data-target="modal-js-example"
+                                data-content-file="plugin_modals/paw_modals/paw_manual.html">
+                                MANUAL
+                            </button>
+                            <button class="button js-modal-trigger" data-target="modal-js-example"
+                                data-content-file="plugin_modals/paw_modals/paw_installation.html">
+                                INSTALLATION INSTRUCTIONS
+                            </button>
+                            <button class="button js-modal-trigger" data-target="modal-js-example"
+                                data-content-file="plugin_modals/paw_modals/paw_routing.html">
+                                DAW ROUTING GUIDE
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- PAW CONTROL END -->
+
+            <!-- BARK BOARD -->
+            <div id="plugins">
+                <div class="box mt-5">
+                    <!-- CAROUSEL -->
+
+                    <div class="container">
+                        <!-- Start Carousel -->
+                        <div id="carousel-demo" class="carousel caro_center">
+                            <div class="carousel-item">
+                                <img src="images/barkboard_coming_soon.png" alt="Bark Board Plugin Image">
+                            </div>
+                            <div class="carousel-item">
+
+                                <figure class="image">
+                                    <img src="images/coming_soon.jpg" alt="Bark Board Plugin Image">
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+
+                                <figure class="image">
+                                    <img src="images/coming_soon.jpg" alt="Bark Board Plugin Image">
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- End Carousel -->
+                    </div>
+                    <div class="container mt-5">
+                        <p class="title is-5 mb-0">BARK BOARD (FREE)</p>
+
+                        <div class="container">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- PAW CONTROL END -->
+
         </section>
 
         <!-- Footer -->
         <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Floof Audio</strong> All Rights Reserved 2024
+                </p>
+            </div>
         </footer>
 
-        <script>
 
-            function addPluginSection(pluginName, pluginDescription, containerId, imagehref, btnIDManual, btnIDTutorials, imgLinkURL) {
-                const container = document.getElementById(containerId);
-                
-                // Determine if the image should be wrapped in a link
-                const imageContent = imgLinkURL ? 
-                    `<a href="${imgLinkURL}">
-                        <img src="${imagehref}" alt="${pluginName} placeholder">
-                    </a>` : 
-                    `<img src="${imagehref}" alt="${pluginName} placeholder">`;
-            
-                const pluginHTML = `
-                <div class="column is-half"> <!-- Each plugin takes up half the width on desktop, stacks on mobile -->
-                    <div class="box">
-                        <figure class="image is-2by1 mb-3">
-                            ${imageContent}
-                        </figure>
-                        <div>
-                            <p class="title is-5 mb-0">${pluginName}</p>
-                            <p>${pluginDescription}</p>
-                            <button id="${btnIDManual}" class="button is-light mt-4">Manual</button>
-                            <button id="${btnIDTutorials}" class="button is-light mt-4">Tutorials</button>
-                        </div>
-                    </div>
-                </div>`;
-            
-                // Append the new section to the container
-                container.innerHTML += pluginHTML;
-            }
-            
 
-            addPluginSection("Paw Control", "MIDI note filter with lots of features for enhancing your musical range.", "plugins", 'images/paw1000x522_free.png', "pawManualID", "pawTutorialsID", "https://floofaudio.gumroad.com/l/pawcontrol?layout=profile");
-            addPluginSection("Bark Board", "MIDI channel filter, enabling you to play all your favourite instruments from one keyboard.", "plugins", 'images/coming_soon.jpg');
-            addPluginSection("Purr Sine", "Simple sine synth with mathematically pure sines, making it sound amazing.", "plugins", 'images/coming_soon.jpg');
-
-        </script>
-
-        <script>
+        <!--        <script>
             document.getElementById('getAllPlugins').addEventListener('click', function () {
                 window.open('https://floofaudio.gumroad.com', '_blank');
 
@@ -123,6 +194,33 @@
                 window.open('https://www.youtube.com/@floofaudio-gu4dv', '_blank');
             });
 
-        </script>
+        </script> -->
+
+
+
+        <!-- MODAL -->
+        <div id="modal-js-example" class="modal">
+            <div class="modal-background"></div>
+
+            <div class="modal-content">
+                <div class="box">
+                    <p>Modal JS example</p>
+                    <!-- Your content -->
+                </div>
+            </div>
+
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#carousel-demo', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            infinite: true
+        });
+    </script>
+    <script src="https://gumroad.com/js/gumroad.js"></script>
 </body>

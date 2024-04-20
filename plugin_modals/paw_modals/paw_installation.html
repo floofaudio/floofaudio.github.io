@@ -1,28 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paw Control Manual</title>
-    <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="styling.css">
-</head>
-
-<body>
-
-    <section class="section">
-       
-
-    <!-- ===========================================================0 -->
-    <!-- INSTALLATION -->
-    <hr>
-    <section class="section">
+ <section class="section">
         <div class="container is-max-desktop content">
             <div class="container" id="installation">
                 <div class="block">
-                    <div class="title is-4 mt-5">INSTALLATION GUIDE</div>
+                    <div class="title is-4 mt-5">PAW CONTROL INSTALLATION GUIDE</div>
 
                     <div class="block">
                         <div class="title is-5 mb-1">General installation notes</div>
@@ -53,34 +33,3 @@
             </div>
         </div>
     </section>
-    <!-- ===========================================================0 -->
-    <!-- DAW ROUTING -->
-    <hr>
-    
-
-    </section>
-
-    <!-- Bulma and your custom scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/js/bulma.min.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.toc-link').forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault(); // Prevent default anchor link behavior
-                    const href = this.getAttribute('href'); // Get the href attribute
-                    const offsetTop = document.querySelector(href).offsetTop; // Get the top offset of the target
-
-                    // Scroll to the target element smoothly
-                    window.scroll({
-                        top: offsetTop, // Scroll to the offset top of the target element
-                        behavior: 'smooth' // Smooth scroll
-                    });
-                });
-            });
-        });
-    </script>
-
-</body>
-
-</html>
