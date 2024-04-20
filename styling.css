@@ -1,11 +1,15 @@
 @font-face {
-    font-family: 'DosisBold'; /* Give a name to your font */
-    src: url('Dosis-Bold.ttf'); /* Path to your font file */
+    font-family: 'DosisBold';
+    /* Give a name to your font */
+    src: url('Dosis-Bold.ttf');
+    /* Path to your font file */
 }
 
 @font-face {
-    font-family: 'DosisMedium'; /* Give a name to your font */
-    src: url('Dosis-Medium.ttf'); /* Path to your font file */
+    font-family: 'DosisMedium';
+    /* Give a name to your font */
+    src: url('Dosis-Medium.ttf');
+    /* Path to your font file */
 }
 
 @media (max-width: 768px) {
@@ -17,30 +21,54 @@
 
 @media (min-width: 769px) {
     .title-medium img {
-        width: 30%;
+        width: 20%;
         height: auto;
+        margin-bottom: 3%;
     }
 }
 
-body, .container, .hero-body, .footer, p{ 
+html,
+body {
+    height: 100%;
+    margin: 0;
     background-color: #feffff;
     color: #0D0D0D;
-    /* color: #0D0Dff; */
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+
 
 .title {
     font-family: 'DosisBold', sans-serif;
-    font-size: calc(16px + 9vw); /* Starts at 16px and grows with the viewport, adjust as needed */
+    font-size: calc(16px + 9vw);
+    /* Starts at 16px and grows with the viewport, adjust as needed */
 }
 
-.subtitle{
-    font-family: 'DosisMedium', sans-serif; /* Fallback to sans-serif if the custom font can't be loaded */
+.subtitle {
+    font-family: 'DosisMedium', sans-serif;
+    /* Fallback to sans-serif if the custom font can't be loaded */
 }
 
-.guideImages{
+.guideImages {
     max-width: 70%;
     height: auto;
 
+}
+
+.title-navbar {
+    /* margin-bottom: 50px !important; */
 }
 
 .title-medium {
@@ -65,14 +93,38 @@ body, .container, .hero-body, .footer, p{
 .button.is-warning,
 .button.is-warning:focus,
 .button.is-warning:active {
-    background-color: #000000; /* Black background */
-    border-color: #000000; /* Black border */
-    color: #ffffff; /* White text */
+    background-color: #000000;
+    /* Black background */
+    border-color: #000000;
+    /* Black border */
+    color: #ffffff;
+    /* White text */
 }
 
-.button.is-warning:hover
-{
-    background-color: #3fc8f2; /* Light blue background on hover, focus, and active */
-    border-color: #3fc8f2; /* Light blue border on hover, focus, and active */
-    color: #ffffff; /* Ensure text stays white */
+.button.is-warning:hover {
+    background-color: #3fc8f2;
+    /* Light blue background on hover, focus, and active */
+    border-color: #3fc8f2;
+    /* Light blue border on hover, focus, and active */
+    color: #ffffff;
+    /* Ensure text stays white */
 }
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.is-active {
+    display: block;
+}
+
+.navbar .navbar-brand {
+    text-align: center;
+    display: block;
+    width: 40%;
+  }
+  
+  .navbar .navbar-brand > .navbar-item,
+  .navbar .navbar-brand .navbar-link {
+    display: inline-block;
+  }

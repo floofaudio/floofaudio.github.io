@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light">
+<html data-theme="light" class="has-navbar-fixed-top">
 
 <head>
     <meta charset="utf-8">
@@ -15,114 +15,46 @@
 
 </head>
 
+
 <body>
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">Home</a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="about.html">About</a>
+                <a class="navbar-item" href="plugins.html">Plugins</a>
+                <a class="navbar-item" href="support.html">Support</a>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+
+    <!-- MAIN CONTENT -->
     <div class="container is-max-desktop">
-
-        <!-- Hero Section -->
-        <section class="section">
-            <!-- <div class="hero-body"> -->
-            <div class="container">
-                <img src="title.svg" alt="Floof Audio">
-            </div>
-            <!-- </div> -->
+        <section id="main-content">
+            Welcome to floof audio
         </section>
-
-
-
-
-        <!-- About Section -->
-        <section id="about" class="section" style="padding-top: 0;">
-            <div class="container">
-
-                <section id="links" class="section" style="padding-top: 0;">
-                    <div class="container">
-                        <div class="columns is-centered">
-                            <div class="column is-one-third">
-                                <button id="getAllPlugins" class="button is-warning">GET OUR PLUGINS HERE</button>
-                            </div>
-                            <div class="column is-one-third">
-                                <button id="connectWithUs" class="button is-warning">CONNECT WITH US</button>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <p>
-                Floof Audio is a audio plugin company started after considering the need for
-                more creative tools in the audio production realm.
-                We offer a unique collection of VST/AAX plugins where each creation is meticulously crafted
-                to inspire musicians, producers, and sound engineers around the globe. 
-                All our plugins are available through Gumroad, linked above and some of them are free :)
-                
-            </p>
-
-        </section>
-
-
-
-
-
-        <!-- Plugins Section -->
-        <section class="section">
-            <div id="plugins" class="columns is-multiline"> </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-        </footer>
-
-        <script>
-
-            function addPluginSection(pluginName, pluginDescription, containerId, imagehref, btnIDManual, btnIDTutorials, imgLinkURL) {
-                const container = document.getElementById(containerId);
-                
-                // Determine if the image should be wrapped in a link
-                const imageContent = imgLinkURL ? 
-                    `<a href="${imgLinkURL}">
-                        <img src="${imagehref}" alt="${pluginName} placeholder">
-                    </a>` : 
-                    `<img src="${imagehref}" alt="${pluginName} placeholder">`;
-            
-                const pluginHTML = `
-                <div class="column is-half"> <!-- Each plugin takes up half the width on desktop, stacks on mobile -->
-                    <div class="box">
-                        <figure class="image is-2by1 mb-3">
-                            ${imageContent}
-                        </figure>
-                        <div>
-                            <p class="title is-5 mb-0">${pluginName}</p>
-                            <p>${pluginDescription}</p>
-                            <button id="${btnIDManual}" class="button is-light mt-4">Manual</button>
-                            <button id="${btnIDTutorials}" class="button is-light mt-4">Tutorials</button>
-                        </div>
-                    </div>
-                </div>`;
-            
-                // Append the new section to the container
-                container.innerHTML += pluginHTML;
-            }
-            
-
-            addPluginSection("Paw Control", "MIDI note filter with lots of features for enhancing your musical range.", "plugins", 'images/paw1000x522_free.png', "pawManualID", "pawTutorialsID", "https://floofaudio.gumroad.com/l/pawcontrol?layout=profile");
-            addPluginSection("Bark Board", "MIDI channel filter, enabling you to play all your favourite instruments from one keyboard.", "plugins", 'images/coming_soon.jpg');
-            addPluginSection("Purr Sine", "Simple sine synth with mathematically pure sines, making it sound amazing.", "plugins", 'images/coming_soon.jpg');
-
-        </script>
-
-        <script>
-            document.getElementById('getAllPlugins').addEventListener('click', function () {
-                window.open('https://floofaudio.gumroad.com', '_blank');
-
-            });
-            document.getElementById('connectWithUs').addEventListener('click', function () {
-                window.open('https://linktr.ee/floofaudio', '_blank');
-            });
-            document.getElementById('pawManualID').addEventListener('click', function () {
-                window.location.href = 'pawcontrol.html';
-            });
-            document.getElementById('pawTutorialsID').addEventListener('click', function () {
-                window.open('https://www.youtube.com/@floofaudio-gu4dv', '_blank');
-            });
-
-        </script>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Floof Audio</strong>.
+                All Rights Reserved 2024.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- NAVBAR SCRIPT -->
+    <script src="navbar_script2.js"></script>
+
+
 </body>
+
+</html>
