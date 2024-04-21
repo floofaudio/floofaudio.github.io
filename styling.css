@@ -22,10 +22,14 @@
     }
 }
 
-body, .container, .hero-body, .footer, p{ 
+body, .container, .hero-body, p{ 
     background-color: #feffff;
     color: #0D0D0D;
     /* color: #0D0Dff; */
+}
+
+.footer{
+    background-color: #f7fbfe;
 }
 
 .title {
@@ -77,11 +81,10 @@ body, .container, .hero-body, .footer, p{
     color: #ffffff; /* Ensure text stays white */
 }
 
-/* /* Ensure that the carousel container does not exceed the width of its parent */
+/* Ensure that the carousel container does not exceed the width of its parent */
 .caro_center{
     overflow: hidden; /* Prevents any part of the carousel from overflowing */
 }
-
 
 
 /* Container for the iframe to ensure it is responsive */
@@ -107,3 +110,8 @@ body, .container, .hero-body, .footer, p{
     padding-top: 0;
 }
 
+dd {
+    display: list-item;
+    list-style-type: "🐶";
+    padding-inline-start: 1ch;
+  }

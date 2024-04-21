@@ -43,9 +43,7 @@
                 <p>
                     Floof Audio is a audio plugin company started after considering the need for
                     more creative tools in the audio production realm.
-                    We offer a unique collection of VST/AAX plugins where each creation is meticulously crafted
-                    to inspire musicians, producers, and sound engineers around the globe.
-                    All our plugins are available through Gumroad, and some of them are free :)
+                    We offer a unique collection of VST plugins available through Gumroad, and some of them are free :)
                 </p>
             </div>
         </section>
@@ -60,7 +58,7 @@
                         <!-- CAROUSEL -->
                         <div class="container">
                             <!-- Start Carousel -->
-                            <div id="carousel-plugin" class="carousel caro_center">
+                            <div id="carousel-paw" class="carousel caro_center">
                                 <div class="carousel-item carousel-youtube">
                                     <iframe width="560" height="315"
                                         src="https://www.youtube.com/embed/06KPL2Eq8n0?si=UElJ8qcqVnjdp2je"
@@ -75,7 +73,6 @@
                                     </figure>
                                 </div>
                                 <div class="carousel-item">
-
                                     <figure class="image">
                                         <img src="images/paw1000x522_free.png" alt="Paw Control Plugin Image">
                                     </figure>
@@ -87,12 +84,12 @@
                             <p class="title is-5 mb-0">PAW CONTROL (FREE)</p>
 
                             <div class="content">
-                                <ul>
-                                    <li>Filter and randomize MIDI notes relative to your input</li>
-                                    <li>Route to external instruments or use internal sine synth</li>
-                                    <li>Optimized for both live performance and studio</li>
-                                    <li>Endless fun for you and your friends, be it with hands or paws!</li>
-                                </ul>
+                                <dl>
+                                    <dd>Filter and randomize MIDI notes relative to your input</dd>
+                                    <dd>Route to external instruments or use internal sine synth</dd>
+                                    <dd>Optimized for both live performance and studio</dd>
+                                    <dd>Endless fun for you and your friends, be it with hands or paws!</dd>
+                                </dl>
                             </div>
 
                             <!--                             <p>
@@ -126,22 +123,20 @@
                 <!-- PAW CONTROL END -->
 
                 <!-- BARK BOARD -->
-                <div class="column is-one-half">
+                <div class="column is-half">
 
                     <div class="box">
                         <!-- CAROUSEL -->
 
                         <div class="container">
                             <!-- Start Carousel -->
-                            <div id="carousel-plugin" class="carousel caro_center">
-                                <div class="carousel-item">
-                                    <img src="images/barkboard_coming_soon.png" alt="Bark Board Plugin Image">
-                                </div>
+                            <div id="carousel-bark" class="carousel caro_center">
                                 <div class="carousel-item">
                                     <figure class="image">
-                                        <img src="images/coming_soon.jpg" alt="Bark Board Plugin Image">
+                                        <img src="images/barkboard_coming_soon.png" alt="Bark Board Plugin Image">
                                     </figure>
                                 </div>
+
                                 <div class="carousel-item">
                                     <figure class="image">
                                         <img src="images/coming_soon.jpg" alt="Bark Board Plugin Image">
@@ -151,44 +146,99 @@
                             <!-- End Carousel -->
                         </div>
                         <div class="container mt-5">
-                            <p class="title is-5 mb-0">BARK BOARD (FREE)</p>
+                            <p class="title is-5 mb-0">BARK BOARD</p>
+                            <div class="content">
+                                <dl>
+                                    <dd>Play all your synths from one keyboard!</dd>
+                                    <dd>Filter and randomize MIDI channels relative to your input</dd>
+                                    <dd>Optimized for both live performance and studio</dd>
+                                </dl>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- BARK BOARD END -->
-        </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="content has-text-centered">
-                <p>
-                    <strong>Floof Audio</strong> All Rights Reserved 2024
-                </p>
-            </div>
-        </footer>
+               <!-- PURR SINE -->
+               <div class="column is-half">
 
-
-
-        <!-- MODAL -->
-        <div id="modal-js-example" class="modal">
-            <div class="modal-background"></div>
-
-            <div class="modal-content">
                 <div class="box">
-                    <p>Modal JS example</p>
-                    <!-- Your content -->
+                    <!-- CAROUSEL -->
+
+                    <div class="container">
+                        <!-- Start Carousel -->
+                        <div id="carousel-purr" class="carousel caro_center">
+                            <div class="carousel-item">
+                                <figure class="image">
+                                    <img src="images/coming_soon.jpg" alt="coming soon Image">
+                                </figure>
+                            </div>
+
+                            <div class="carousel-item">
+                                <figure class="image">
+                                    <img src="images/coming_soon.jpg" alt="coming soon Image">
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- End Carousel -->
+                    </div>
+                    <div class="container mt-5">
+                        <p class="title is-5 mb-0">PURR SINE</p>
+                        <div class="content">
+                            <dl>
+                                <dd>Sine synth?</dd>
+                                
+                              </dl>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <button class="modal-close is-large" aria-label="close"></button>
         </div>
+        <!-- BARK BOARD END -->
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Floof Audio</strong> All Rights Reserved 2024
+            </p>
+        </div>
+    </footer>
+
+
+
+    <!-- MODAL -->
+    <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+
+        <div class="modal-content">
+            <div class="box">
+                <p>Modal JS example</p>
+                <!-- Your content -->
+            </div>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close"></button>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <script>
-        bulmaCarousel.attach('#carousel-plugin', {
+        bulmaCarousel.attach('#carousel-paw', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            infinite: true
+        });
+
+        bulmaCarousel.attach('#carousel-bark', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            infinite: true
+        });
+        bulmaCarousel.attach('#carousel-purr', {
             slidesToScroll: 1,
             slidesToShow: 1,
             infinite: true
