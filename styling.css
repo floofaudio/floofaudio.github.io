@@ -1,11 +1,26 @@
-@font-face {
-    font-family: 'DosisBold'; /* Give a name to your font */
-    src: url('Dosis-Bold.ttf'); /* Path to your font file */
+:root {
+    --body-bg: #242423;
+    --primary: 221, 221, 221;
+    --contrast-primary: 0, 0, 0;
+    --color: 221, 221, 221;
+    --filled: 0, 0, 0;
+    --contrast-filled: 221, 221, 221;
+    --secondary: 63, 199, 242;
+    --border-alpha: 0.35;
 }
 
 @font-face {
-    font-family: 'DosisMedium'; /* Give a name to your font */
-    src: url('Dosis-Medium.ttf'); /* Path to your font file */
+    font-family: 'DosisBold';
+    /* Give a name to your font */
+    src: url('Dosis-Bold.ttf');
+    /* Path to your font file */
+}
+
+@font-face {
+    font-family: 'DosisMedium';
+    /* Give a name to your font */
+    src: url('Dosis-Medium.ttf');
+    /* Path to your font file */
 }
 
 @media (max-width: 768px) {
@@ -22,26 +37,31 @@
     }
 }
 
-body, .container, .hero-body, p{ 
+body,
+.container,
+.hero-body,
+p {
     background-color: #feffff;
     color: #0D0D0D;
     /* color: #0D0Dff; */
 }
 
-.footer{
+.footer {
     background-color: #f7fbfe;
 }
 
 .title {
     font-family: 'DosisBold', sans-serif;
-    font-size: calc(16px + 9vw); /* Starts at 16px and grows with the viewport, adjust as needed */
+    font-size: calc(16px + 9vw);
+    /* Starts at 16px and grows with the viewport, adjust as needed */
 }
 
-.subtitle{
-    font-family: 'DosisMedium', sans-serif; /* Fallback to sans-serif if the custom font can't be loaded */
+.subtitle {
+    font-family: 'DosisMedium', sans-serif;
+    /* Fallback to sans-serif if the custom font can't be loaded */
 }
 
-.guideImages{
+.guideImages {
     max-width: 70%;
     height: auto;
 
@@ -66,33 +86,22 @@ body, .container, .hero-body, p{
     }
 }
 
-.button.is-warning,
-.button.is-warning:focus,
-.button.is-warning:active {
-    background-color: #000000; /* Black background */
-    border-color: #000000; /* Black border */
-    color: #ffffff; /* White text */
-}
-
-.button.is-warning:hover
-{
-    background-color: #3fc8f2; /* Light blue background on hover, focus, and active */
-    border-color: #3fc8f2; /* Light blue border on hover, focus, and active */
-    color: #ffffff; /* Ensure text stays white */
-}
-
 /* Ensure that the carousel container does not exceed the width of its parent */
-.caro_center{
-    overflow: hidden; /* Prevents any part of the carousel from overflowing */
+.caro_center {
+    overflow: hidden;
+    /* Prevents any part of the carousel from overflowing */
 }
 
 
 /* Container for the iframe to ensure it is responsive */
 .carousel-youtube {
     position: relative;
-    width: 100%; /* Full width of the carousel item */
-    padding-top: 56.25%; /* Aspect ratio for 16:9 screens */
-    overflow: hidden; /* Hides anything outside this area */
+    width: 100%;
+    /* Full width of the carousel item */
+    padding-top: 56.25%;
+    /* Aspect ratio for 16:9 screens */
+    overflow: hidden;
+    /* Hides anything outside this area */
 }
 
 /* Styling the iframe itself */
@@ -104,14 +113,43 @@ body, .container, .hero-body, p{
     height: 100%;
 }
 
-.about-section{
+.about-section {
     padding-left: 48px;
     padding-bottom: 0;
     padding-top: 0;
 }
 
-dd {
-    display: list-item;
-    list-style-type: "🐶";
-    padding-inline-start: 1ch;
-  }
+
+.content ul {
+    list-style-type: square;
+/*     color: aqua; */
+}
+
+.custom-gumroad-button {
+    background-color: rgba(var(--primary)); /* Light background on hover */
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: .75rem 2rem;
+    border: solid .0625rem rgba(var(--color), var(--border-alpha));
+    color: black;
+    border-radius: .25rem;
+    
+    /* font-family: 'Avenir', 'Montserrat', 'Corbel', 'source-sans-pro', sans-serif; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition-timing-function: ease-out;
+    transition-duration: var(--transition-duration);
+    transition-property: transform;
+}
+
+
+.custom-gumroad-button:hover {
+    background-color: rgba(var(--secondary)); /* Light background on hover */
+    color: rgb(var(--contrast-primary)); /* White text on hover */
+    transform: scale(1.08); /* Slight scale on hover */
+}
+

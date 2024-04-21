@@ -1,88 +1,194 @@
-<section class="section">
-    <div class="container is-max-desktop content">
-        <div class="block">
-            <div class="title is-4 mt-5">PAW CONTROL MANUAL</div>
+<div class="block">
+    <div class="title is-4 mt-5">PAW CONTROL MANUAL</div>
+    <p>Here you will find</p>
+    <ul>
+        <li>INSTALLATION INSTRUCTIONS</li>
+        <li>MANUAL</li>
+        <li>DAW ROUTING GUIDE</li>
+    </ul>
+    <p>Paw Control is a VST instrument that lets you filter MIDI notes in creative ways.
+        It also includes a sine synth engine in so that you to hear the output right away.
+        The instrument is intended to be routed forward to any MIDI instrument of your choice. Read on for
+        the manual, installation guide and a guide for routing MIDI in various DAW's.
+    </p>
+</div>
+<hr>
+<div class="block">
+    <div class="title is-4 mt-5">PAW CONTROL INSTALLATION GUIDE</div>
 
-            <p>Paw Control is a VST instrument that lets you filter MIDI notes in creative ways.
-                It also includes a sine synth engine in so that you to hear the output right away.
-                The instrument is intended to be routed forward to any MIDI instrument of your choice. Read on for
-                the manual, installation guide and a guide for routing MIDI in various DAW's.
-            </p>
-        </div>
-        <hr>
-
-
-
-        <div class="container mb-5">
-            <img src='images/manual_image.png' alt="Paw control manual image">
-        </div>
-        <div class="block">
-            <div class="title is-5 mb-1">1. Key Selectors</div>
-            <div>These 12 key selectors represent the 12 notes of an octave, allowing you to select which MIDI
-                notes
-                are active. A blue keycap indicates an active note; white indicates inactive. The selection
-                applies to all octaves. The plugin highlights outputted keys in brown. If you press a note that is
-                inactive, the nearest active note will be played instead.</div>
+    <div class="block">
+        <div class="title is-5 mb-1">General installation notes</div>
+        <div>Installation of this plugin is as simply as placing the whole plugin folder ending in .vst3
+            in a directory
+            where your DAW host is able to locate it. An installer will replace this in the near future.
         </div>
 
-        <div class="block">
-            <div class="title is-5 mb-1">2. Key Selection Nudgers</div>
-            <div>These two buttons enable nudging all key selections one step to the left or right. With it you can
-                do quick
-                scale modulations. For instance, lets say you have selected active keys in the pattern of a C minor
-                scale. If you nudge it to the right it then
-                changes the scale to C# minor, and so forth.</div>
+        <div class="title is-5 mb-1 mt-3">Windows</div>
+        <div>
+            VST Plugins for windows are generally located in "C:\Program Files\Common Files\VstPlugins"
+            or
+            "C:\Program Files\VSTPlugins". However this is
+            dependable on the DAW host configuration.
         </div>
-
-        <div class="block">
-            <div class="title is-5 mb-1">3. Saveslots</div>
-            <div>These four buttons allow for quick switching between different key selections.
-                The active saveslot is highlighted in white.
-                Selections auto-save to the current slot when the key selection is changed.
-                If you ctrl+click on a saveslot, you copy the current selection to the saveslot you are
-                clicking on.
-            </div>
+        <div class="title is-5 mb-1 mt-3">Mac</div>
+        <div>
+            This plugin is currently not supported on Mac as an AU plugin. We do plan to add support in
+            the future once we have sufficient funds to acquire a Mac computer.
         </div>
-
-        <div class="block">
-            <div class="title is-5 mb-1">4. Random Range</div>
-            <div>This slider adds the possibility of randomness to your output midi. The randomness is confined
-                within the range set and within the current key-selection.
-            </div>
+        <div class="title is-5 mb-1 mt-3">Linux</div>
+        <div>
+            If you are a Linux user, we are confident in your ability to figure this out, but the
+            general idea is the same as for windows.
         </div>
+    </div>
+</div>
 
-        <div class="block">
-            <div class="title is-5 mb-1">5. Octave Down Range</div>
-            <div>This slider adds the possibility of randomness of octaves below the input note. The higher the
-                slider the lower the octaves can go.</div>
+<hr>
+
+<div class="container mb-5">
+    <img src='images/manual_image.png' alt="Paw control manual image">
+</div>
+<div class="block">
+    <div class="title is-5 mb-1">1. Key Selectors</div>
+    <div>These 12 key selectors represent the 12 notes of an octave, allowing you to select which MIDI
+        notes
+        are active. A blue keycap indicates an active note; white indicates inactive. The selection
+        applies to all octaves. The plugin highlights outputted keys in brown. If you press a note that is
+        inactive, the nearest active note will be played instead.</div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">2. Key Selection Nudgers</div>
+    <div>These two buttons enable nudging all key selections one step to the left or right. With it you can
+        do quick
+        scale modulations. For instance, lets say you have selected active keys in the pattern of a C minor
+        scale. If you nudge it to the right it then
+        changes the scale to C# minor, and so forth.</div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">3. Saveslots</div>
+    <div>These four buttons allow for quick switching between different key selections.
+        The active saveslot is highlighted in white.
+        Selections auto-save to the current slot when the key selection is changed.
+        If you ctrl+click on a saveslot, you copy the current selection to the saveslot you are
+        clicking on.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">4. Random Range</div>
+    <div>This slider adds the possibility of randomness to your output midi. The randomness is confined
+        within the range set and within the current key-selection.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">5. Octave Down Range</div>
+    <div>This slider adds the possibility of randomness of octaves below the input note. The higher the
+        slider the lower the octaves can go.</div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">6. Octave Up Range</div>
+    <div>Similar to octave down range but adds the possiblity of octaves above the input note instead.</div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">7. REC</div>
+    <div>
+        This button has two functions. <br><br>
+        Normal click: Allows you to MIDI learn key selection. The keys are all deselected at first, and this
+        mode is stopped by clicking again. You know the mode is active when the REC button is blinking.
+        <br><br>
+        CTRL+click: Allows you to MIDI learn saveslots to MIDI notes. You know the mode is active when both
+        the REC button and a saveslot button is blinking.
+        Simply input a midi note and the next saveslot starts blinking. Afterwards you will be able to
+        select saveslots with the midi notes you input.
+        If you only want to assign some of the keys, simply abort the mode by clicking again on the REC
+        button. If you want to delete all assignments, simply activate this mode and then press the REC
+        button again before inputing any midi notes.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">8. Internal Sine Synth On/Off</div>
+    <div>Toggles the internal sine synth on or off. Turning the synth off may slightly lower the overall
+        latency.</div>
+</div>
+
+
+<div class="block">
+    Paw Control is fun on its own but even more fun when you route the output of it to other
+    instruments.<br>
+    Below, you will find guides for routing MIDI from Paw Control to various DAWs.
+</div>
+<div class="block">
+    <div class="container mb-5">
+        <div class="title is-5 mb-1 ">ABLETON LIVE</div>
+        <img src='images/ableton_guide.png' alt="Ableton Live setup guide" class="guideImages">
+        <div>
+            Place Paw Control on one track and some other instrument on another track.
+            On the track containing the other instrument, under 'midi from' choose Paw Control in
+            the
+            list. Remember to click on the blue monitor in icon in order to hear that track.
         </div>
-
-        <div class="block">
-            <div class="title is-5 mb-1">6. Octave Up Range</div>
-            <div>Similar to octave down range but adds the possiblity of octaves above the input note instead.</div>
+    </div>
+    <div class="container mb-5">
+        <div class="title is-5 mb-1">FL STUDIO</div>
+        <img src='images/fl_studio_guide.png' alt="FL Studio setup guide" class="guideImages">
+        <div>
+            Place Paw control on one track and some other instrument on another track.
+            In the plugin window of Paw Control choose on of the MIDI output ports.
+            In the plugin window of the other instrument, choose the same MIDI port as an Input.
         </div>
-
-        <div class="block">
-            <div class="title is-5 mb-1">7. REC</div>
-            <div>
-                This button has two functions. <br><br>
-                Normal click: Allows you to MIDI learn key selection. The keys are all deselected at first, and this
-                mode is stopped by clicking again. You know the mode is active when the REC button is blinking.
-                <br><br>
-                CTRL+click: Allows you to MIDI learn saveslots to MIDI notes. You know the mode is active when both
-                the REC button and a saveslot button is blinking.
-                Simply input a midi note and the next saveslot starts blinking. Afterwards you will be able to
-                select saveslots with the midi notes you input.
-                If you only want to assign some of the keys, simply abort the mode by clicking again on the REC
-                button. If you want to delete all assignments, simply activate this mode and then press the REC
-                button again before inputing any midi notes.
-            </div>
+    </div>
+    <div class="container mb-5">
+        <div class="title is-5 mb-1">CUBASE</div>
+        <img src='images/cubase_guide.png' alt="Cubase setup guide" class="guideImages">
+        <div>
+            Place Paw Control on one track and some other instrument on another track.
+            On the track containing the other instrument, under MIDI routing choose Paw Control in
+            the
+            list.
         </div>
-
-        <div class="block">
-            <div class="title is-5 mb-1">8. Internal Sine Synth On/Off</div>
-            <div>Toggles the internal sine synth on or off. Turning the synth off may slightly lower the overall
-                latency.</div>
+    </div>
+    <div class="container mb-5">
+        <div class="title is-5 mb-1">STUDIO ONE</div>
+        <img src="images/studio_one_guide.png" alt="Studio one setup guide" class="guideImages">
+        <div>
+            Place Paw Control on one track and some other instrument on another track.
+            On the track containing the other instrument, select inputs and choose PawControl in the
+            list.
+            Remember to click on the blue speaker icon next to the record icon in order to hear that
+            track.
         </div>
-
-</section>
+    </div>
+    <div class="container mb-5">
+        <div class="title is-5 mb-1">BITWIG</div>
+        <img src='images/bitwig_guide.png' alt="Studio one setup guide" class="guideImages">
+        <div>
+            Place Paw Control on one track and some other instrument on another track.
+            On the track containing the other instrument, add a note receiver tool and select Paw
+            Control as the note source.
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="title is-5 mb-1">REASON</div>
+        <div>
+            Currently, Reason does not support internal MIDI routing, making it impossible to route
+            Paw Control to another MIDI instrument within Reason.
+            We hope that the team at Reason will address this limitation in the future.
+            There might be workarounds with virtual midi busses, but that is outside the scope of
+            this guide.
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="title is-5 mb-1">LOGIC</div>
+        <div>
+            This plugin is currently not supported on Mac and as an AU plugin. We plan to add
+            support in the future once we have sufficient funds to acquire a Mac computer.
+            A guide for Logic will then quickly follow.
+        </div>
+    </div>
+</div>
