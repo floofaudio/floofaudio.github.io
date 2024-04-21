@@ -17,7 +17,7 @@
 
     <!-- Carousel -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
-    
+
     <!-- My CSS -->
     <link rel="stylesheet" href="styling.css">
 
@@ -43,7 +43,7 @@
             <div>
                 Floof Audio is an audio plugin company started after considering the need for
                 more creative tools in the audio production realm.
-                We offer a unique collection of VST plugins available through Gumroad, and some of them are free :)
+                We offer a unique collection of VST plugins available through Gumroad, some of them for free :)
             </div>
         </section>
 
@@ -60,7 +60,7 @@
                             <div id="carousel-paw" class="carousel caro_center">
                                 <div class="carousel-item carousel-youtube">
                                     <iframe width="560" height="315"
-                                        src="https://www.youtube.com/embed/06KPL2Eq8n0?si=UElJ8qcqVnjdp2je"
+                                        src="https://www.youtube.com/embed/06KPL2Eq8n0?controls=0"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -80,9 +80,9 @@
 
                             <div class="content">
                                 <ul>
-                                    <li>Filter and randomize MIDI notes relative to your input</li>
-                                    <li>Route to external instruments or use internal sine synth</li>
-                                    <li>Endless fun for you and your friends, be it with hands or paws!</li>
+                                    <li>Give your paws full control over your MIDI notes!</li>
+                                    <li>Optimized for both live and studio</li>
+                                    <li>Use with external instruments or use internal sine synth</li>
                                     </dl>
                             </div>
 
@@ -211,7 +211,7 @@
 
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
-   
+
     <script src="https://gumroad.com/js/gumroad.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
@@ -220,15 +220,17 @@
         bulmaCarousel.attach('#carousel-paw', {
             slidesToScroll: 1,
             slidesToShow: 1,
-            infinite: true
+            infinite: true,
+            pagination: false
         });
 
         bulmaCarousel.attach('#carousel-bark', {
             slidesToScroll: 1,
             slidesToShow: 1,
-            infinite: true
+            infinite: true,
+            pagination: false
         });
- 
+
     </script>
 
 
