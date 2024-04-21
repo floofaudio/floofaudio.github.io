@@ -133,6 +133,7 @@ body,
     border: solid .0625rem rgba(var(--color), var(--border-alpha));
     color: black;
     border-radius: .25rem;
+    margin: 4px;
     
     /* font-family: 'Avenir', 'Montserrat', 'Corbel', 'source-sans-pro', sans-serif; */
     display: inline-flex;

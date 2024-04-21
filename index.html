@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -15,13 +15,14 @@
     <!-- Bulma SOCIAL ICONS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css" />
 
-
     <!-- Carousel -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styling.css">
 
 
     <script src="modal_script.js"></script>
-    <link rel="stylesheet" href="styling.css">
 
 </head>
 
@@ -94,7 +95,8 @@
                             </p> -->
 
                             <div class="container mt-5">
-                                <a class="gumroad-button m-1" href="https://floofaudio.gumroad.com/l/pawcontrol">Buy
+                                <a class="gumroad-button m-1" href="https://floofaudio.gumroad.com/l/pawcontrol"
+                                    aria-label="close">Buy
                                     on</a>
                                 <button class="custom-gumroad-button js-modal-trigger" data-target="modal-js-example"
                                     data-content-file="plugin_modals/paw_modals/paw_manual.html">
@@ -151,7 +153,7 @@
         <div class="content has-text-centered">
             <div>
                 <!-- YOUTUBE -->
-                <a href="https://www.youtube.com/@floofaudio-gu4dv" target="_blank">
+                <a href="https://www.youtube.com/@floofaudio-gu4dv" target="_blank" aria-label="Youtube">
                     <svg class="icon-size" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                         <path
@@ -209,9 +211,11 @@
 
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
-
+   
+    <script src="https://gumroad.com/js/gumroad.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+
     <script>
         bulmaCarousel.attach('#carousel-paw', {
             slidesToScroll: 1,
@@ -224,18 +228,10 @@
             slidesToShow: 1,
             infinite: true
         });
-        bulmaCarousel.attach('#carousel-purr', {
-            slidesToScroll: 1,
-            slidesToShow: 1,
-            infinite: true
-        });
+ 
     </script>
-    <script src="https://gumroad.com/js/gumroad.js"></script>
 
 
-    <script>
-        document.getElementById('openDiscord').addEventListener('click', function () {
-            window.open('https://discord.gg/PGrKHNR27u', '_blank');
-        });
-    </script>
+
+
 </body>
