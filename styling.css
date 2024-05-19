@@ -126,30 +126,31 @@ body,
     list-style-type: square;
 }
 
-.custom-gumroad-button {
+.custom-button {
     background-color: rgba(var(--primary)); /* Light background on hover */
     font-size: 1rem;
     line-height: 1.5;
-    padding: .75rem 2rem;
+    padding: .75rem 1rem;
     border: solid .0625rem rgba(var(--color), var(--border-alpha));
     color: black;
     border-radius: .25rem;
     margin: 4px;
+    min-width: 140px;
     
     /* font-family: 'Avenir', 'Montserrat', 'Corbel', 'source-sans-pro', sans-serif; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
-    cursor: pointer;
+    /* gap: .5rem; */
+/*     cursor: pointer;
     text-decoration: none;
     transition-timing-function: ease-out;
     transition-duration: var(--transition-duration);
-    transition-property: transform;
+    transition-property: transform; */
 }
 
 
-.custom-gumroad-button:hover {
+.custom-button:hover {
     background-color: rgba(var(--secondary)); /* Light background on hover */
     color: rgb(var(--contrast-primary)); /* White text on hover */
     transform: scale(1.08); /* Slight scale on hover */
