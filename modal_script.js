@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el, contentFile) {
+        console.log('Button clicked');
         if (contentFile) {
             fetch(contentFile)
                 .then(response => {

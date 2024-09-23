@@ -176,7 +176,7 @@ body,
   }
 
   .plugin-box{
-    min-height: 500px;
+    min-height: 300px;
   }
 
   .twitter-container {
@@ -196,4 +196,10 @@ body,
 .image img {
     width: 100%;
     height: auto;
+}
+
+.custom-list li {
+    list-style-type: circle; /* Change to disc or circle */
+    color: #000000; /* Change the bullet color */
+    margin-bottom: 0.5em; /* Add space between list items */
 }
