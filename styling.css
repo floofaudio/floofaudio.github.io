@@ -93,27 +93,6 @@ body,
     /* Prevents any part of the carousel from overflowing */
 }
 
-
-/* Container for the iframe to ensure it is responsive */
-.carousel-youtube {
-    position: relative;
-    width: 100%;
-    /* Full width of the carousel item */
-    padding-top: 56.25%;
-    /* Aspect ratio for 16:9 screens */
-    overflow: hidden;
-    /* Hides anything outside this area */
-}
-
-/* Styling the iframe itself */
-.carousel-youtube iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .about-section {
     /* padding-left: 48px; */
     padding-bottom: 0;
@@ -126,54 +105,12 @@ body,
     list-style-type: square;
 }
 
-.custom-gumroad-button {
-    background-color: rgba(var(--primary)); /* Light background on hover */
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: .75rem 2rem;
-    border: solid .0625rem rgba(var(--color), var(--border-alpha));
-    color: black;
-    border-radius: .25rem;
-    margin: 4px;
-    
-    /* font-family: 'Avenir', 'Montserrat', 'Corbel', 'source-sans-pro', sans-serif; */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition-timing-function: ease-out;
-    transition-duration: var(--transition-duration);
-    transition-property: transform;
-}
-
-
-.custom-gumroad-button:hover {
-    background-color: rgba(var(--secondary)); /* Light background on hover */
-    color: rgb(var(--contrast-primary)); /* White text on hover */
-    transform: scale(1.08); /* Slight scale on hover */
-}
-
 .icon-size {
     width: 50px;
     height: 50px;
     padding: 10px;
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 
   .plugin-box{
     min-height: 300px;
@@ -199,7 +136,22 @@ body,
 }
 
 .custom-list li {
-    list-style-type: circle; /* Change to disc or circle */
+    list-style-type: disc; /* Change to disc or circle */
     color: #000000; /* Change the bullet color */
     margin-bottom: 0.5em; /* Add space between list items */
+}
+/* GLIDE RELATED */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio for the video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
