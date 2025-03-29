@@ -136,6 +136,7 @@ body,
 }
 
 .custom-list li {
+    font-family: 'DosisMedium', sans-serif;
     list-style-type: disc; /* Change to disc or circle */
     color: #000000; /* Change the bullet color */
     margin-bottom: 0.5em; /* Add space between list items */
