@@ -1,0 +1,200 @@
+<div class="block">
+    <div class="content">
+        <p>Here you will find</p>
+        <ul class="manual-list">
+            <li><i class="fas fa-play-circle"></i> VIDEO TUTORIAL</li>
+            <li><i class="fas fa-book"></i> MANUAL</li>
+            <li><i class="fas fa-download"></i> INSTALLATION GUIDE</li>
+            <li><i class="fas fa-sync-alt"></i> UPDATE GUIDE</li>
+            <li><i class="fas fa-random"></i> DAW ROUTING GUIDE</li>
+        </ul>
+    </div>
+</div>
+
+<hr>
+<div class="title is-4 mt-5">VIDEO TUTORIAL</div>
+<div class="block">
+    <div class="container mb-5">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/CXuAE1yFxxk?si=OOTP5YAKxveGMUS2" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="title is-4 mt-5">MANUAL</div>
+<div class="block">
+    <div class="title is-5 mb-1">Introduction</div>
+    <div>
+        Floof Station is a powerful instrument plugin that hosts third-party instrument, audio effect, and MIDI effect plugins. In short, it lets you combine your favorite plugins into one unified instrument. Whether you're building layered soundscapes or complex processing chains, Floof Station is designed to make advanced setups intuitive and fast.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Scanning for Plugins</div>
+    <div>
+        To begin using your plugins, you'll first need to scan your system.
+        <ol>
+            <li>Click the burger button at the bottom right to open the settings menu.</li>
+            <li>Click the Plugin Manager button to open it in a separate window.</li>
+            <li>Click Scan Plugins and follow the on-screen instructions to locate your plugin folders.</li>
+        </ol>
+        Once the scan is complete, all compatible plugins will be available within Floof Station.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Loading an Instrument into a Rack</div>
+    <div>
+        <ol>
+            <li>Click the menu on a rack unit.</li>
+            <li>Choose Load Plugin, then select from your available plugins.</li>
+        </ol>
+        The plugin will load in a few seconds and will be ready to play. You can load another instrument in the rack unit below and stack them together. To open a plugin’s interface, click its name in the rack unit.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Paw Pages</div>
+    <div>
+        Each rack unit has three functional pages, accessible via the paw icon:
+        <ul>
+            <li><strong>Audio Page</strong></li>
+            <li><strong>MIDI Page</strong></li>
+            <li><strong>Macro Page</strong></li>
+        </ul>
+        Audio-related controls are green, while MIDI-related controls are blue. This color scheme is consistent throughout the plugin. You can also use the global paw button in the bottom bar to switch pages for all rack units simultaneously.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Macro Page</div>
+    <div>
+        The Macro page includes six assignable macro controllers.
+        <ol>
+            <li>Right-click a macro controller and select Assign.</li>
+            <li>The controller will blink. Move the desired parameter in the plugin's user interface.</li>
+        </ol>
+        Macros can be automated from your DAW or host, allowing expressive control and easy modulation.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Audio Page</div>
+    <div>
+        The Audio page includes five audio sends labeled A–E.<br>
+        Ctrl+Click (Cmd+Click on macOS) a send controller to toggle between pre-fader and post-fader mode.
+        <br><br>
+        The sixth controller sets the main audio output, with the following options:
+        <ul>
+            <li><strong>Master</strong> – Sends audio directly to the DAW/host.</li>
+            <li><strong>None</strong> – Disables direct output; however, audio sends will still function.</li>
+            <li><strong>Bus 1–12</strong> – Routes audio to one of 12 buses, recognized as separate channels in your DAW/host for multi-output setups.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">MIDI Page</div>
+    <div>
+        The MIDI page offers advanced filtering and routing options:
+        <ul>
+            <li><strong>Note range filter</strong>: Set a note range where the unit will respond</li>
+            <li><strong>Velocity filter</strong>: Let the plugin only respond within this velocity range</li>
+            <li><strong>Note offset</strong>: Offset the notes going into the plugin</li>
+            <li><strong>Octave offset</strong>: Offset the notes going into the plugin by octaves</li>
+            <li><strong>MIDI channel filter</strong>: Filter only certain MIDI channels into the plugin</li>
+        </ul>
+        The last knob determines the MIDI output target, allowing you to send MIDI to other units, no units or to the DAW/host.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Audio & MIDI Receive</div>
+    <div>
+        Each plugin can receive audio and MIDI from the following sources:
+        <ul>
+            <li>Host</li>
+            <li>Unit Above (in the rack)</li>
+            <li>None</li>
+            <li>Sends A–E in audio or Y–Å in MIDI</li>
+        </ul>
+        Selecting Unit Above is ideal for creating serial chains of audio and MIDI effects.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Rack Unit Management</div>
+    <div>
+        <ul>
+            <li><strong>Add a unit</strong>: Click the plus (+) button in the bottom bar.</li>
+            <li><strong>Remove a unit</strong>: Click the rack’s menu button and select Remove Rack.</li>
+            <li><strong>Move a unit</strong>: Drag it by clicking and holding an empty space on the unit.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Misc Controls</div>
+    <div>
+        Located below the central display screen, you’ll find:
+        <ul>
+            <li><strong>Solo / Mute</strong></li>
+            <li><strong>Level and Pan controls</strong></li>
+            <li><strong>MIDI Panic</strong> – Sends Note Off for all notes on the current unit. You may need to click it more than once if some notes remain stuck.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Window Modes</div>
+    <div>
+        Each plugin’s GUI can be displayed in one of two ways:
+        <ul>
+            <li><strong>Common Window</strong> – Shared among plugins</li>
+            <li><strong>Individual Window</strong> – Separate for each plugin</li>
+        </ul>
+        Set the window mode by opening the rack unit’s menu and selecting your preferred mode. You can also set the default window mode in the settings section.
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Presets</div>
+    <div>
+        Save and recall complete rack configurations:
+        <ul>
+            <li>Click the save icon to open the Save As dialog.</li>
+            <li>Ctrl+Click the icon to quickly overwrite the current preset.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="block">
+    <div class="title is-5 mb-1">Themes</div>
+    <div>
+        You can change themes per rack unit via its menu, or apply a global theme from the Settings section. Additionally, the color intensity can be adjusted in the Settings section.
+    </div>
+</div>
+
+<hr>
+<div class="block">
+    <div class="title is-4 mt-5">INSTALLATION GUIDE</div>
+
+    <div class="block">
+        <div class="title is-5 mb-1 mt-3">Windows</div>
+        <div>
+            Installation of this plugin is as simply as unzipping the zip file to uncover a folder with a .vst3 ending.
+            Place this entire folder in a directory where your DAW host is able to locate it.<br><br>
+            VST3 plugins for Windows are typically installed in either "C:\Program Files\Common Files\VST3" or
+            "C:\Program Files\VSTPlugins". However, the exact location can vary depending on the configuration of your
+            DAW host.
+        </div>
+        <div class="title is-5 mb-1 mt-3">Mac</div>
+        <div>
+            Use the provided installer to install Floof Station on your Mac. The installer will place the plugin in the correct location for your DAW host to find it.
+        </div>
+
+    </div>
+</div>

@@ -141,6 +141,53 @@ body,
     color: #000000; /* Change the bullet color */
     margin-bottom: 0.5em; /* Add space between list items */
 }
+
+/* Custom manual list styling for plugin manuals */
+.manual-list {
+  list-style: none;
+  padding-left: 0;
+}
+.manual-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+.manual-list li i {
+  color: #3273dc; /* Bulma primary color */
+  margin-right: 0.7em;
+  font-size: 1.2em;
+}
+
+/* FINAL FIX: Only set list-style-type: square for ul, never ol. Remove all !important from ol. Use default browser for ol. */
+.block ul, .content ul {
+  list-style-type: square;
+  margin-left: 2em;
+  padding-left: 0;
+}
+
+.block ol {
+  margin-left: 2em;
+  padding-left: 0;
+  /* No list-style-type or position, let browser default */
+}
+
+.block ol > li {
+  margin-bottom: 0.5em;
+  font-family: 'DosisMedium', sans-serif;
+  color: #000;
+}
+
+li {
+  list-style-type: inherit;
+}
+
+/* Add spacing to all lists in manual blocks */
+.block ul, .block ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
 /* GLIDE RELATED */
 .video-container {
     position: relative;
