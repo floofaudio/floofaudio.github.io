@@ -53,7 +53,7 @@
             <div>
                 <p class="subtitle is-4">Floof Audio is a small plugin company based in Oslo Norway. Our philosophy is to create fun and intuitive plugins that help you make music faster and easier. We believe in the power of creativity and want to provide tools that inspire and empower musicians of all levels.
                     
-                    Checkout our plugins below, and dont hesitate contacting us if you need any more information or assistance!</p>
+                    Check out our plugins below, and dont hesitate contacting us if you need any more information or assistance!</p>
             </div>
         </section>
 
@@ -80,7 +80,7 @@
                                 </ul>
                             </div>
                             <div class="buttons is-left mt-5">
-                                <button class="button is-dark" onclick="openPopup()">Buy Now</button>
+                                <button class="button is-dark" onclick="openPopup('https://floofaudio.itch.io/floof-station/purchase?popup=1')">Buy Now</button>
                                 <button class="button is-dark js-modal-trigger" data-target="manual-modal" data-content-file="./plugin_modals/station_modals/floof_station_manual.html">Manual</button>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
                                 </ul>
                             </div>
                             <div class="buttons is-left mt-5">
-                                <button class="button is-dark" onclick="openPopup()">Download</button>
+                                <button class="button is-dark" onclick="openPopup('https://floofaudio.itch.io/paw-control/purchase?popup=1')">Download</button>
                                 <button class="button is-dark js-modal-trigger" data-target="manual-modal" data-content-file="./plugin_modals/paw_modals/paw_manual.html">Manual</button>
                             </div>
                         </div>
@@ -114,6 +114,8 @@
 
         <!-- FLOOF STACKER END -->
     </div>
+
+    
 
     <!-- Footer -->
     <footer class="footer">
@@ -198,12 +200,12 @@
     </div>
     
     <script>
-        function openPopup() {
+        function openPopup(url) {
             const width = 600;
             const height = 800;
             const left = (screen.width / 2) - (width / 2);
             const top = (screen.height / 2) - (height / 2);
-            window.open("https://floofaudio.itch.io/paw-control/purchase?popup=1", "popup", `width=${width},height=${height},top=${top},left=${left}`);
+            window.open(url, "popup", `width=${width},height=${height},top=${top},left=${left}`);
         }
     </script>
 
