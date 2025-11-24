@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Floof Audio</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="images\flooflogo_32_32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/flooflogo_32_32.png">
 
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
@@ -56,6 +56,25 @@
                 </div>
             </div>
         </section>
+
+        <section> 
+            
+        <button onclick="Moonbase.view_account()" class="icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+            style="width: 100%; height: 100%; fill: currentColor;">
+            <path d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/>
+            </svg>
+        </button>
+
+            
+        <button onclick="Moonbase.view_cart()" class="icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path d="M320 64C326.6 64 332.9 66.7 337.4 71.5L481.4 223.5L481.9 224L560 224C577.7 224 592 238.3 592 256C592 270.5 582.4 282.7 569.2 286.7L523.1 493.9C516.6 523.2 490.6 544 460.6 544L179.3 544C149.3 544 123.3 523.2 116.8 493.9L70.8 286.7C57.6 282.8 48 270.5 48 256C48 238.3 62.3 224 80 224L158.1 224L158.6 223.5L302.6 71.5C307.1 66.7 313.4 64 320 64zM320 122.9L224.2 224L415.8 224L320 122.9zM240 328C240 314.7 229.3 304 216 304C202.7 304 192 314.7 192 328L192 440C192 453.3 202.7 464 216 464C229.3 464 240 453.3 240 440L240 328zM320 304C306.7 304 296 314.7 296 328L296 440C296 453.3 306.7 464 320 464C333.3 464 344 453.3 344 440L344 328C344 314.7 333.3 304 320 304zM448 328C448 314.7 437.3 304 424 304C410.7 304 400 314.7 400 328L400 440C400 453.3 410.7 464 424 464C437.3 464 448 453.3 448 440L448 328z"/>
+            </svg>
+        </button>
+
+
+        </section>
     
 
         <!-- Plugins Section -->
@@ -83,7 +102,9 @@
                                 </ul>
                             </div>
                             <div class="buttons is-left mt-5">
-                                  <a href="https://floofaudio.itch.io/floof-station" target="_blank" class="button is-dark">Get from itch.io</a>
+                                  <button class="button is-dark" onclick="Moonbase.add_to_cart({ product_id: 'floof-station' })">
+                                        Add to cart
+                                    </button>
 
                                 <button class="button is-dark js-modal-trigger" data-target="manual-modal" data-content-file="./plugin_modals/station_modals/floof_station_manual.html">Manual</button>
                             </div>
@@ -114,7 +135,9 @@
                                 </ul>
                             </div>
                             <div class="buttons is-left mt-5">
-                                <a href="https://floofaudio.itch.io/paw-control" target="_blank" class="button is-dark">Get from itch.io</a>
+                                   <button class="button is-dark" onclick="Moonbase.add_to_cart({ product_id: 'paw-control' })">
+                                        Add to cart
+                                    </button>
 
                                 <button class="button is-dark js-modal-trigger" data-target="manual-modal" data-content-file="./plugin_modals/paw_modals/paw_manual.html">Manual</button>
                             </div>
@@ -238,6 +261,19 @@
 
 <script>
   new Glide('.glide').mount()
+</script>
+
+<script type="module" src="https://assets.moonbase.sh/storefront/moonbase.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        Moonbase.setup('https://floof-audio.moonbase.sh',{
+                  toolbar: {
+                // We have custom buttons to trigger account and cart,
+                // so let's hide the default toolbar.
+                enabled: false,
+            }
+        })
+    })
 </script>
     
 </body>
